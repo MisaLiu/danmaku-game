@@ -14,13 +14,15 @@
     "react-dom": "^19.1.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",
-    "vite-express": "*"
+    "vite-express": "*",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.2",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@types/ws": "^8.18.1",
     "@vitejs/plugin-react": "^4.4.1",
     "nodemon": "^3.1.10",
     "vite": "^6.3.3"

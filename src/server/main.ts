@@ -1,5 +1,6 @@
 import express from "express";
 import ViteExpress from "vite-express";
+import { ApplyWebSocketServer } from "./websocket/index.js";
 
 const app = express();
 
@@ -7,6 +8,8 @@ app.get("/hello", (_, res) => {
   res.send("Hello Vite + React + TypeScript!");
 });
 
-ViteExpress.listen(app, 3000, () =>
-  console.log("Server is listening on port 3000..."),
-);
+const server = ViteExpress.listen(app, 3000, () => {
+  console.log('HTTP server started!');
+});
+
+ApplyWebSocketServer(server);
